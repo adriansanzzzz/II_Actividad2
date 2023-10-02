@@ -11,7 +11,7 @@ public int minValue = 0;
 public int maxValue = 25;
 ```
 ```csharp
-            randomArray[i] = Random.Range(minValue, maxValue + 1); // Numeros aleatorios
+randomArray[i] = Random.Range(minValue, maxValue + 1); // Numeros aleatorios
 entre 0 y 25, +1 para que incluya el 25.
 ```
 
