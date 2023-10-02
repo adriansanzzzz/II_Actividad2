@@ -23,8 +23,27 @@ randomArray[i] = Random.Range(minValue, maxValue + 1); // Numeros aleatorios ent
 <img width="964" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/3c383297-319d-4fac-ad53-e123f707aae9">
 
 ### 3 - Crea un script asociado a la esfera con dos variables Vector3 públicas. Dale valor a cada componente de los vectores desde el inspector. Muestra en la consola:
+Declaro los vectores publicos
+```csharp
+public Vector3 vectorA;
+public Vector3 vectorB;
+```
 #### - La magnitud de cada uno de ellos. 
+Busque en la documentacion de Vector3 la propiedad de magnitud
+https://docs.unity3d.com/ScriptReference/Vector3-magnitude.html
+```csharp
+float magnitudeA = vectorA.magnitude;
+float magnitudeB = vectorB.magnitude;
+```
 #### - El ángulo que forman
+https://docs.unity3d.com/ScriptReference/Vector3.Angle.html
+```csharp
+float angleDegrees = Vector3.Angle(vectorA, vectorB);
+```
 #### - La distancia entre ambos.
+https://docs.unity3d.com/ScriptReference/Vector3.Distance.html
+```csharp
+float distance = Vector3.Distance(vectorA, vectorB);
+```
 #### - Un mensaje indicando qué vector está a una altura mayor.
-
+Para ello hice un condicional que comprueba los distintos casos.
