@@ -91,3 +91,48 @@ Seguimos los pasos del enunciado para acceder a las propiedades de los materiale
 ```
 ![p2_7](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/17dc0d1a-5ed2-4afa-b30c-34e99f3b1f54)
 ### 8 - Agrega 5 esferas más en la escena. Crea un grupo de 2 , asígnales la misma etiqueta y a las restantes otra etiqueta diferente a ésta. Crea un vector con las distancias de cada una de las del segundo grupo al cubo. Sube en altura (aumenta la y) de la esfera más cercana. Cambiar color de la más lejana cuando el jugador pulsa la tecla espacio.
+Añado esferas mediante
+1. `GameObject`.
+3. `3D Object`.
+4. `Esfera`.
+Creo un nuevo grupo y les asigno el tag first_blue_esfera.
+<img width="1260" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/5e188711-1f5c-4deb-a98b-c3f4993aaf04">
+El resto que no estan en el grupo tienen el tag blue_esfera.
+
+Hago un array con las esferas con cada tag diferente y el cubo.
+```csharp
+GameObject[] esferas = GameObject.FindGameObjectsWithTag(esferaTag);
+GameObject[] esferas_sec = GameObject.FindGameObjectsWithTag(esfera_groupTag);
+GameObject cubo = GameObject.FindWithTag(cuboTag);
+```
+
+Recorro la el array de esferas y guardo al final la esfera con menor distancia al cubo.
+```csharp
+foreach (GameObject esfera in esferas)
+        {
+            var distanceToCubo = Vector3.Distance(cubo.transform.position, esfera.transform.position);
+
+            if (distanceToCubo < distanciaMinima)
+            {
+                distanciaMinima = distanceToCubo;
+                esferaMasCercanaAlCubo = esfera;
+            }
+        }
+```
+Como en apartados anteriores, creo un vector con la nueva posición y se la cambio a la esfera más cercana.
+```csharp
+Vector3 min_newPositionEsfera = new Vector3(esferaMasCercanaAlCubo.transform.position.x, esferaMasCercanaAlCubo.transform.position.y + 1.0f,esferaMasCercanaAlCubo.transform.position.z);
+esferaMasCercanaAlCubo.transform.position = min_newPositionEsfera;
+```
+Lo pongo en el start para que lo haga al inciar.
+
+Repetimos lo mismo pero al contrario para obtener la esfera mas lejana.
+```csharp
+  if (Input.GetKeyDown(KeyCode.Space))
+        {
+            esferaMaterial = esferaMasLejanaCubo.GetComponent<Renderer>().material;
+            esferaMaterial.color = Color.green;
+        }
+```
+Esta vez dentro del update para que se accione al tocar el espacio.
+![p2_8](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/6a2f0285-9490-43c6-b567-bcae610ba47c)
