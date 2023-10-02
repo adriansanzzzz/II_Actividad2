@@ -49,3 +49,45 @@ float distance = Vector3.Distance(vectorA, vectorB);
 Para ello hice un condicional que comprueba los distintos casos.
 
 ![p2_3](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/3107fa87-0ac3-4967-8017-e19459053bd0)
+
+### 4- Muestra en pantalla el vector con la posición de la esfera.
+<img width="1258" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/09bf6b58-d18b-4626-8df9-28378447f807">
+
+### 5 - Crea un script para la esfera que muestre en consola la distancia a la que están el cubo y el cilindro.
+Primeramente, creo tags para cada objeto para poder asignarlos. <br>
+<img width="200" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/a51a6881-2cd5-43c5-bac6-5dbdff8ddcc5">
+<img width="200" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/dd42c0a8-7102-4a12-8769-f42cfa826601">
+<br> He hecho public los tags para poder modificarlos desde el inspector. <br>
+<img width="317" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/d16413e2-50e8-4e2e-8f53-34966142ef10">
+<img width="832" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/366593ef-777f-4a00-b18e-695ca0506ede">
+
+### 6 - Crea un script que alinee el cilindro y el cubo con la esfera, 5  unidades a derecha e izquierda respectivamente en el eje X. Prueba a cambiar a cambiar la coordenada x de la posición de la esfera en el Inspector de Objetos.
+Busco por tags, creo un vector3 nuevo para el cilindro y el cubo y le aplico la posicion x de la esfera para estar alineados a esta.
+Sumo y resto 5.0 para que se desplace a la derecha e izquierda.
+Cuando cambio la X de la esfera, se desplaza todo en el eje x, ya que esta puesto dentro del update y cada frame cambia.
+![p2_6](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/6105196e-61e9-43f6-9251-249bef4877cf)
+
+### 7 - Cambia el color del cilindro cuando el usuario pulse la tecla A, cambia el color del cubo cuando el usuario pulse la flecha arriba.
+Seguimos los pasos del enunciado para acceder a las propiedades de los materiales.
+```csharp
+ // Obtiene los materiales de los objetos cilindro y cubo
+        cilindroMaterial = cilindro.GetComponent<Renderer>().material;
+        cuboMaterial = cubo.GetComponent<Renderer>().material;
+```
+```csharp
+
+// Si se presiona la tecla A
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            cilindroMaterial.color = Color.yellow;
+        }
+
+        // Si se presiona la flecha arriba
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            cuboMaterial.color = Color.blue;
+        }
+        
+```
+![p2_7](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/17dc0d1a-5ed2-4afa-b30c-34e99f3b1f54)
+### 8 - Agrega 5 esferas más en la escena. Crea un grupo de 2 , asígnales la misma etiqueta y a las restantes otra etiqueta diferente a ésta. Crea un vector con las distancias de cada una de las del segundo grupo al cubo. Sube en altura (aumenta la y) de la esfera más cercana. Cambiar color de la más lejana cuando el jugador pulsa la tecla espacio.
