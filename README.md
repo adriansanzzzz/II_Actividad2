@@ -47,3 +47,5 @@ float distance = Vector3.Distance(vectorA, vectorB);
 ```
 #### - Un mensaje indicando qué vector está a una altura mayor.
 Para ello hice un condicional que comprueba los distintos casos.
+
+![p2_3](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/3107fa87-0ac3-4967-8017-e19459053bd0)
