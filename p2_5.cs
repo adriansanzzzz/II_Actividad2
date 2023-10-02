@@ -10,6 +10,7 @@ public class p2_5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Buscamos objetos por etiqueta
         GameObject esfera = GameObject.FindWithTag(esferaTag);
         GameObject cubo = GameObject.FindWithTag(cuboTag);
 
