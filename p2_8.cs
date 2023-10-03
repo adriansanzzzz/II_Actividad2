@@ -14,7 +14,7 @@ public class p2_8 : MonoBehaviour
     void Start()
     {
         GameObject[] esferas = GameObject.FindGameObjectsWithTag(esferaTag);
-        GameObject[] gruoup_esferas = GameObject.FindGameObjectsWithTag(esfera_groupTag);
+        GameObject[] group_esferas = GameObject.FindGameObjectsWithTag(esfera_groupTag);
         GameObject cubo = GameObject.FindWithTag(cuboTag);
 
 
