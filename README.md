@@ -136,6 +136,8 @@ Repetimos lo mismo pero al contrario para obtener la esfera mas lejana.
         }
 ```
 Esta vez dentro del update para que se accione al tocar el espacio.
-![p2_8](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/6a2f0285-9490-43c6-b567-bcae610ba47c)
+
+![p2_8b](https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/aabaa823-eb44-4e4f-b5be-518d8474ef73)
+
 
 
