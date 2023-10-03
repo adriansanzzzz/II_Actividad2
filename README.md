@@ -95,9 +95,10 @@ Añado esferas mediante
 1. `GameObject`.
 3. `3D Object`.
 4. `Esfera`.
-Creo un nuevo grupo y les asigno el tag first_blue_esfera.
-<img width="1260" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/5e188711-1f5c-4deb-a98b-c3f4993aaf04">
-El resto que no estan en el grupo tienen el tag blue_esfera.
+Creo un nuevo grupo y le asigno a la primera el tag first_blue_esfera.
+<img width="721" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/644161a7-52e7-44d0-8973-d858ea540e9f">
+
+El resto que no estan en el grupo tienen el tag second_blue_esfera.
 
 Hago un array con las esferas con cada tag diferente y el cubo.
 ```csharp
