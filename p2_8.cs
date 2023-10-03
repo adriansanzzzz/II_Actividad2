@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class p2_8 : MonoBehaviour
 {
-    public string esferaTag = "blue_esfera"; // Etiqueta de la esfera
+    public string esferaTag = "second_blue_esfera"; // Etiqueta de la esfera
     public string esfera_groupTag = "first_blue_esfera"; // Etiqueta de la esfera
     public string cuboTag = "red_cube"; // Etiqueta del cubo
 
