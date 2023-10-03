@@ -96,6 +96,8 @@ Añado esferas mediante
 3. `3D Object`.
 4. `Esfera`.
 Creo un nuevo grupo y le asigno a las 2 primeras el tag first_blue_esfera.
+<img width="658" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/a6ca7b68-45da-4a00-9c54-1b91ec665a7e">
+
 <img width="721" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/34dd51cd-70de-40bc-bc7e-65802ee8551a">
 
 El resto que no estan en el grupo tienen el tag second_blue_esfera.
