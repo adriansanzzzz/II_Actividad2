@@ -95,8 +95,8 @@ Añado esferas mediante
 1. `GameObject`.
 3. `3D Object`.
 4. `Esfera`.
-Creo un nuevo grupo y le asigno a la primera el tag first_blue_esfera.
-<img width="721" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/644161a7-52e7-44d0-8973-d858ea540e9f">
+Creo un nuevo grupo y le asigno a las 2 primeras el tag first_blue_esfera.
+<img width="721" alt="image" src="https://github.com/adriansanzzzz/II_Actividad2/assets/74414073/34dd51cd-70de-40bc-bc7e-65802ee8551a">
 
 El resto que no estan en el grupo tienen el tag second_blue_esfera.
 
